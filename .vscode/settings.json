@@ -80,5 +80,8 @@
     "pcss",
     "postcss"
   ],
-  "material-icon-theme.activeIconPack": "none"
+  "material-icon-theme.activeIconPack": "none",
+  "git.branchProtection": [
+    "-main"
+  ]
 }

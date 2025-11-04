@@ -5,7 +5,7 @@ import { Elysia } from 'elysia'
 
 const app = new Elysia({ strictPath: false, aot: false })
   .use(cors())
-  .get('/', 'This is the backend API for the MCSR PB Display extension. No content here.')
+  .get('/', 'Very simple selfhostable proxy service for REST requests. More info: https://github.com/MAttila42/rest-proxy')
 
 export default {
   async fetch(
