@@ -25,7 +25,7 @@ Authorization: Bearer your_token_here
 
 Then you can send a request to the proxy like this:
 
-`POST https://rest-proxy.com/proxy`
+`POST https://rest-proxy.com/`
 
 Body:
 
