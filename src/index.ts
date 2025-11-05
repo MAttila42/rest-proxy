@@ -36,6 +36,8 @@ new Elysia({ strictPath: false, aot: false })
       })
     }
 
+    console.warn(payload)
+
     let response: Response
     try {
       response = await fetch(payload.url, {
@@ -51,13 +53,11 @@ new Elysia({ strictPath: false, aot: false })
       })
     }
 
-    const responseHeaders = new Headers(response.headers)
-    responseHeaders.delete('content-length')
+    console.warn(response)
 
     return new Response(response.body, {
       status: response.status,
       statusText: response.statusText,
-      headers: responseHeaders,
     })
   })
   .get('/', 'Very simple selfhostable proxy service for REST requests. More info: https://github.com/MAttila42/rest-proxy')
