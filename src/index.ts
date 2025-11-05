@@ -36,8 +36,6 @@ new Elysia({ strictPath: false, aot: false })
       })
     }
 
-    console.warn(payload)
-
     let response: Response
     try {
       response = await fetch(payload.url, {
@@ -52,8 +50,6 @@ new Elysia({ strictPath: false, aot: false })
         details: error instanceof Error ? error.message : String(error),
       })
     }
-
-    console.warn(response)
 
     return new Response(response.body, {
       status: response.status,
